@@ -1,0 +1,14 @@
+name: CI Hello World
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print build message
+        run: echo "Build Successful"
